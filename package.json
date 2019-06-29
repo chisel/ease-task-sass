@@ -1,0 +1,33 @@
+{
+  "name": "ease-task-sass",
+  "version": "1.0.0",
+  "description": "SASS preprocessor for Ease task manager.",
+  "main": "task.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chisel/ease-task-sass.git"
+  },
+  "keywords": [
+    "ease",
+    "task",
+    "task-manager",
+    "task-runner",
+    "scheduler",
+    "sass"
+  ],
+  "author": "Ramtin Soltani <ramtin@chiselpowered.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chisel/ease-task-sass/issues"
+  },
+  "homepage": "https://github.com/chisel/ease-task-sass#readme",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.12.0"
+  }
+}
