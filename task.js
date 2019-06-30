@@ -35,13 +35,19 @@ module.exports = (logger, dirname, config) => {
           promises.push(new Promise((resolve, reject) => {
 
             // Compile the SASS file into CSS
-            sass.render(_.assign(_.cloneDeep(config), {
-              file: path.join(dirname, config.dir, file),
-              outFile: path.join(dirname, config.outDir, file.replace('.scss', '.css')),
-              data: undefined,
-              dir: undefined,
-              outDir: undefined
-            }), (error, result) => {
+            const finalOptions = _.cloneDeep(config);
+
+            delete finalOptions.file;
+            delete finalOptions.outFile;
+            delete finalOptions.data;
+            delete finalOptions.dir;
+            delete finalOptions.outDir;
+            delete finalOptions.cleanOutDir;
+
+            finalOptions.file = path.join(dirname, config.dir, file);
+            finalOptions.outFile = path.join(dirname, config.outDir, file.replace('.scss', '.css'));
+
+            sass.render(finalOptions, (error, result) => {
 
               if ( error ) return reject(error);
 
