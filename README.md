@@ -24,7 +24,7 @@ module.exports = ease => {
 This plugin takes a config object similar to [SASS Options](https://github.com/sass/node-sass#options) while ignoring `file`, `outFile`, and `data` properties. Instead, the following properties are added to the options object:
   - `dir`: Path to a directory containing all the SASS files, relative to `easeconfig.js`
   - `outDir`: Path to the output directory where the CSS files should be written, relative to `easeconfig.js`
-  - `clearOutDir`: Boolean indicating if the output directory should be emptied first
+  - `cleanOutDir`: Boolean indicating if the output directory should be emptied first
 
 # Example
 
@@ -38,7 +38,7 @@ module.exports = ease => {
     dir: 'sass',
     outDir: 'css',
     sourceMap: true,
-    clearOutDir: true
+    cleanOutDir: true
   });
 
   ease.job('process-sass-files', ['sass']);
