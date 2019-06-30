@@ -1,6 +1,6 @@
 {
   "name": "ease-task-sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SASS preprocessor for Ease task manager.",
   "main": "task.js",
   "scripts": {
