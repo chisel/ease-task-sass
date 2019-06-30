@@ -30,7 +30,7 @@ module.exports = (logger, dirname, config) => {
         for ( const file of files ) {
 
           // Skip partial files
-          if ( file.substr(0, 1) === '_' ) continue;
+          if ( path.basename(file).substr(0, 1) === '_' ) continue;
 
           promises.push(new Promise((resolve, reject) => {
 
