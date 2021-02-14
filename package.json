@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/chisel/ease-task-sass#readme",
   "dependencies": {
-    "fs-extra": "^8.1.0",
-    "glob": "^7.1.4",
-    "lodash": "^4.17.11",
-    "node-sass": "^4.12.0"
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.20",
+    "node-sass": "^5.0.0"
   }
 }
